@@ -37,6 +37,7 @@ if __name__ == "__main__":
 - Rebinding changes what a variable name points to (e.g., x = 10). 
   Mutating changes the internal state of an object (e.g., list.append()).
 - Mutable: list, dict, set. Immutable: tuple, str, int.
+"""
 - When you pass a list, you pass a reference. Modifying the list inside the 
   function changes the original object because they point to the same memory location.
-"""
+  
