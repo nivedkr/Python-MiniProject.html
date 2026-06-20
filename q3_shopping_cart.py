@@ -29,6 +29,14 @@ if __name__ == "__main__":
 
     print(f"Alice's Total: ${calculate_total(cart1)}")
     print(f"Bob's Total: ${calculate_total(cart2)}")
+
+"""
+--- Discussion Points ---
+- discount=0 is safe because integers are immutable. cart=[] is dangerous 
+  because lists are mutable; the same list object is reused across calls.
+- Rebinding changes what a variable name points to (e.g., x = 10). 
+  Mutating changes the internal state of an object (e.g., list.append()).
+- Mutable: list, dict, set. Immutable: tuple, str, int.
 - When you pass a list, you pass a reference. Modifying the list inside the 
   function changes the original object because they point to the same memory location.
 """
